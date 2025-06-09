@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="mystyles.css"> </head>
+<body>
+    <h1 id="gameTitle">Score Keeper</h1>
+
+    <div class="player-names">
+        <input type="text" id="p1Name" placeholder="Player One Name" value="Player One">
+        <input type="text" id="p2Name" placeholder="Player Two Name" value="Player Two">
+    </div>
+
+    <div class="score-card">
+        <h2 class="player-score-display"><span id="p1NameDisplay">Player One</span>: <span id="p1score">0</span></h2>
+        <h2 class="player-score-display"><span id="p2NameDisplay">Player Two</span>: <span id="p2score">0</span></h2>
+    </div>
+
+    <div class="controls">
+        <label for="playto">Playing To:</label>
+        <select name="" id="playto" >
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button id="p1button">+1 Player One</button>
+        <button id="p2button">+1 Player Two</button>
+        <button id="reset">Reset</button>
+    </div>
+</body>
+<script src="myapp.js"></script>
+</html>
